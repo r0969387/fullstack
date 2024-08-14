@@ -1,9 +1,15 @@
-// override/add Bootstraps maps
-
-// add 'purple' to the $theme-colors map
-$custom-colors: (
-  'purple': #800080
+$color-map: (
+        'background': #f7f7f7,
+        'primary': #ff6f61,
+        'secondary': #6c757d,
+        'dark': #343a40,
+        'accent': #28a745,
+        'light': #ffffff,
+        'hero-overlay': rgba(0, 0, 0, 0.5),
+        'about-bg': #ffe5b4,
+        'produce-bg': #d1ecf1,
+        'farming-bg': #c3e6cb,
+        'community-bg': #f5c6cb,
+        'events-bg': #b8daff,
+        'contact-bg': #e2e3e5
 );
-
-// Merge the maps
-$theme-colors: map-merge($theme-colors, $custom-colors);

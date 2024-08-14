@@ -1,0 +1,188 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: map-get($color-map, 'background');
+  font-size: 18px; // Increase font size
+  line-height: 1.6; // Improve readability
+  color: map-get($color-map, 'dark');
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: map-get($color-map, 'primary');
+  font-size: 1.2rem; // Increase size for visibility
+}
+
+.navbar-nav .nav-link {
+  color: map-get($color-map, 'dark');
+  font-size: 1.1rem; // Increase size for visibility
+
+  &:hover {
+    color: map-get($color-map, 'accent');
+  }
+}
+
+.hero-section {
+  background-image: url('src/pexels-pixabay-289334.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  h1 {
+    font-size: 3.5rem; // Increase size for visibility
+    background-color: map-get($color-map, 'hero-overlay');
+    padding: 15px 30px; // Larger padding for better readability
+    border-radius: 15px; // Softer corners
+    text-shadow: 2px 2px 5px map-get($color-map, 'dark');
+  }
+}
+
+section {
+  padding: 70px 0; // Increase padding for more space
+
+  &.bg-light {
+    background-color: map-get($color-map, 'light');
+  }
+}
+
+#about {
+  background-color: map-get($color-map, 'about-bg');
+
+  h2 {
+    color: map-get($color-map, 'primary');
+    font-size: 2.5rem; // Larger font for headings
+  }
+
+  p {
+    font-size: 1.2rem; // Increase paragraph size
+    color: map-get($color-map, 'dark');
+  }
+}
+
+#produce {
+  background-color: map-get($color-map, 'produce-bg');
+
+  h2 {
+    color: map-get($color-map, 'secondary');
+    font-size: 2.5rem;
+  }
+
+  img {
+    width: 100%; // Full width of the container
+    max-width: 600px; // Restrict to a maximum width
+    height: auto; // Maintain aspect ratio
+    display: block;
+    margin: 0 auto 30px; // Center align with bottom margin
+  }
+}
+
+#farming {
+  background-color: map-get($color-map, 'farming-bg');
+
+  h2 {
+    color: map-get($color-map, 'dark');
+    font-size: 2.5rem;
+  }
+}
+
+/* Combined Community & Events Section */
+.carousel-item {
+  padding: 20px; /* Add padding around the text */
+  text-align: center; /* Center the text */
+}
+
+.card {
+  border: none; /* Remove border if desired */
+}
+
+.card-title {
+  font-size: 1.5rem; /* Adjust title size */
+  font-weight: bold; /* Make title bold */
+}
+
+.card-text {
+  font-size: 1.2rem; /* Adjust text size */
+  color: #555; /* Set text color */
+}
+
+.carousel-item {
+  padding: 20px; /* Add padding around the text */
+  text-align: center; /* Center the text */
+}
+
+.card {
+  border: none; /* Remove border if desired */
+}
+
+.card-title {
+  font-size: 1.5rem; /* Adjust title size */
+  font-weight: bold; /* Make title bold */
+}
+
+.card-text {
+  font-size: 1.2rem; /* Adjust text size */
+  color: #555; /* Set text color */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #000000; /* Example color, change as needed */
+  border-radius: 50%; /* Make the icon circular */
+  width: 40px; /* Adjust the size of the arrow icon */
+  height: 40px; /* Adjust the size of the arrow icon */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 50px; /* Adjust the area around the arrow for easier clicking */
+  height: 50px;
+  top: 50%; /* Position in the middle of the container vertically */
+  transform: translateY(-50%); /* Offset the position to exactly center */
+}
+
+.carousel-control-prev {
+  left: 10px; /* Adjust the distance from the left edge */
+}
+
+.carousel-control-next {
+  right: 10px; /* Adjust the distance from the right edge */
+}
+
+
+
+
+#contact {
+  background-color: map-get($color-map, 'contact-bg');
+
+  h2 {
+    color: map-get($color-map, 'dark');
+    font-size: 2.5rem;
+  }
+}
+
+footer {
+  background-color: map-get($color-map, 'secondary');
+  color: white;
+  padding: 30px 0; // Increase padding for better spacing
+  text-align: center;
+
+  p {
+    margin: 0;
+    font-size: 1.2rem; // Increase font size
+  }
+}
+
+.btn-primary {
+  background-color: map-get($color-map, 'accent');
+  border-color: map-get($color-map, 'accent');
+  font-size: 1.1rem; // Larger font size for buttons
+
+  &:hover {
+    background-color: darken(map-get($color-map, 'accent'), 10%);
+    border-color: darken(map-get($color-map, 'accent'), 10%);
+  }
+}
+
