@@ -1,0 +1,4 @@
+@mixin color-combo($front: #ff6f61, $back: #f7f7f7) {
+  color: $front;
+  background-color: $back;
+}
